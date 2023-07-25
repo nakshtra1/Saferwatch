@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #fff;
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+  color: #67757c;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+code {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* html {
+  position: relative;
+  min-height: 100%;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} */
+
+/* html {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+} */
+
+* {
+  outline: none;
+}
