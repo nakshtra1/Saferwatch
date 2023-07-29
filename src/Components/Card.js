@@ -4,7 +4,8 @@ import img from '../Img/img9.png';
 import img2 from '../Img/img1.PNG';
 import axios from 'axios';
 
-function Card() {
+function Card(Data) {
+    console.log("carddata=====>", Data.map)
     const [apiData, setApiData] = useState([]);
     const [loading, setLoading] = useState(true);
 
@@ -48,7 +49,7 @@ function Card() {
                         {item.is_geofence_alert === true ? (
 
                             <>
-                                <div className="intel-top-tab intel-red-tab">{item.is_geofence_alert}</div>
+                                <div className="intel-top-tab intel-red-tab">{Data.fname}</div>
                                 <div className="intel-top-tab intel-blue-tab">
                                     <img className="mr-2" width="10" src="https://safermedia.saferwatchapp.com/f40591c0-885a-11e8-b39d-dd2d4b00f27f/0/1531708488106.png" />
                                     {item.incident.title}
@@ -108,13 +109,13 @@ function Card() {
                                     target="_blank"
                                     href={`https://maps.google.com/?q=${item.incident_geofence.address}`}
                                 >
-                                    {item.incident_geofence.radius}  {item.incident_geofence.address}
+                                   {Data.locationlogo}  {item.incident_geofence.address}
                                 </a>
                             </div>
                             {/* Map */}
                             {item.is_geofence_alert && (
                                 <div className="map-margin">
-                                    <div style={{ height: '50vh', width: '100%' }}>{item.organization.name}</div>
+                                    <div style={{ height: '50vh', width: '100%' }}>{Data.map}</div>
                                 </div>
                             )}
                             <hr />

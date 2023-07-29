@@ -6,7 +6,7 @@ import { Data } from './Data'
 
 
 function Page3() {
-    // console.log('Data======>', Data);
+    console.log('Data======>', Data);
     return (
         <form id="publicAlertsForm" method="GET" action="">
 
@@ -86,7 +86,7 @@ function Page3() {
                         {/* CARD */}
                         {
                             Data.map((res, index) => {
-                                return <Card key={index} {...res} />
+                                return <Card key={index} {...res} Data={Data} />
                             })
                         }
                     </div>
